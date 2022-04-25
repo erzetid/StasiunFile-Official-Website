@@ -977,9 +977,9 @@
 			modal.style.display = "block";
 
 			// When the user clicks on the button, open the modal
-			btn.onclick = function () {
+			function openModal() {
 				modal.style.display = "block";
-			};
+			}
 
 			// When the user clicks on <span> (x), close the modal
 			span.onclick = function () {
@@ -992,6 +992,7 @@
 					modal.style.display = "none";
 				}
 			};
+			openModal();
 		</script>
 		<script src="dist/js/main.min.js"></script>
 	</body>
